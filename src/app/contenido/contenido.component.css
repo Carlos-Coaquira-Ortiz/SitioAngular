@@ -1,0 +1,29 @@
+.gallery{
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 21.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  padding: 15px;
+  background-color: #9CB864;
+}
+.gallery-item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1400px){
+  .gallery{
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  }
+}
+@media screen and (max-width: 750px){
+  .gallery{
+    display: block;
+  }
+  .gallery-item{
+    margin-bottom: 10px;
+  }
+  .gallery-item:last-child{
+    margin-bottom: 0;
+  }
+}
